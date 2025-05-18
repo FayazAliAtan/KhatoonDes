@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Khatoon Designer - Elegant & Creative Designs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+      padding-top: 70px; /* Navbar height */
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      height: 80vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+    /* Services icons */
+    .service-icon {
+      font-size: 3rem;
+      color: #0d6efd;
+      margin-bottom: 1rem;
+      transition: color 0.3s ease;
+    }
+    .service-icon:hover {
+      color: #0a58ca;
+    }
+    /* Portfolio hover */
+    .portfolio-item:hover img {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    /* Testimonials */
+    .testimonial {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+    }
+    /* Footer */
+    footer {
+      background-color: #212529;
+      color: #adb5bd;
+    }
+    footer a {
+      color: #adb5bd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fs-3" href="#hero">
+      <i class="bi bi-palette-fill"></i> Khatoon Designer
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav fs-5">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div>
+    <h1>Elegant Designs Tailored for You</h1>
+    <p>Crafting beauty with passion and creativity</p>
+    <a href="#portfolio" class="btn btn-primary btn-lg">
+      <i class="bi bi-eye"></i> View Portfolio
+    </a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img
+        src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80"
+        alt="Khatoon Designer"
+        class="img-fluid rounded shadow"
+      />
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h2>About Khatoon Designer</h2>
+      <p>
+        Khatoon Designer brings your ideas to life with expert craftsmanship and artistic vision.
+        We specialize in fashion, interiors, and creative design solutions tailored just for you.
+      </p>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Unique Custom Designs</li>
+        <li><i class="bi bi-clock-history text-primary me-2"></i>Timely Delivery</li>
+        <li><i class="bi bi-people-fill text-primary me-2"></i>Customer Satisfaction Focused</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <i class="bi bi-brush service-icon"></i>
+        <h5>Fashion Design</h5>
+        <p>Custom clothing designs tailored to your style and preferences.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-house service-icon"></i>
+        <h5>Interior Design</h5>
+        <p>Beautiful and functional interior design for your living or work space.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-pencil-square service-icon"></i>
+        <h5>Graphic Design</h5>
+        <p>Creative logos, branding, and visual assets to represent your brand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="portfolio" class="container my-5">
+  <h2 class="text-center mb-5">Khatoon Designer Portfolio</h2>
+
+  <!-- Category Filter Buttons -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-primary mx-1 filter-btn active" data-category="all">All</button>
+    <button class="btn btn-outline-primary mx-1 filter-btn" data-category="fashion">Fashion</button>
+    <button class="btn btn-outline-primary mx-1 filter-btn" data-category="interior">Interior</button>
+    <button class="btn btn-outline-primary mx-1 filter-btn" data-category="graphic">Graphic</button>
+  </div>
+
+  <!-- Cards Container -->
+  <div id="cards-container">
+    <!-- Fashion Category -->
+    <div class="category-section" data-category="fashion">
+      <h3>Fashion Designs</h3>
+      <p>Elegant and trendy fashion design projects crafted to fit every style and occasion, from casual wear to formal attire.</p>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Elegant Evening Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Elegant Evening Gown</h5>
+              <p class="card-text flex-grow-1">A floor-length evening gown featuring delicate beadwork, soft fabric flow, and classic cuts to highlight elegance.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Elegant Evening Gown">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Casual Summer Dress" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Casual Summer Dress</h5>
+              <p class="card-text flex-grow-1">Lightweight and comfortable summer dress with floral prints perfect for warm sunny days.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Casual Summer Dress">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Modern Workwear" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Modern Workwear</h5>
+              <p class="card-text flex-grow-1">Professional yet stylish workwear outfits designed for comfort and confidence in the office.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Modern Workwear">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Interior Category -->
+    <div class="category-section" data-category="interior" style="display:none;">
+      <h3>Interior Designs</h3>
+      <p>Transforming spaces with modern, functional, and aesthetic interior design solutions tailored to client needs.</p>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cozy Living Room" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cozy Living Room</h5>
+              <p class="card-text flex-grow-1">Warm tones, comfortable furniture, and perfect lighting to create a welcoming living room environment.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Cozy Living Room">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Minimalist Bedroom" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Minimalist Bedroom</h5>
+              <p class="card-text flex-grow-1">Sleek, simple design focusing on clean lines and calming colors for restful sleep.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Minimalist Bedroom">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Modern Kitchen" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Modern Kitchen</h5>
+              <p class="card-text flex-grow-1">Functional kitchen layout with state-of-the-art appliances and stylish storage solutions.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Modern Kitchen">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Graphic Category -->
+    <div class="category-section" data-category="graphic" style="display:none;">
+      <h3>Graphic Designs</h3>
+      <p>Creative branding and marketing materials designed to make your brand memorable and impactful.</p>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Brand Logo Design" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Brand Logo Design</h5>
+              <p class="card-text flex-grow-1">Distinctive and versatile logos crafted to establish strong brand identities.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Brand Logo Design">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Marketing Brochure" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Marketing Brochure</h5>
+              <p class="card-text flex-grow-1">Eye-catching brochures designed to communicate your message effectively to customers.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Marketing Brochure">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Social Media Campaign" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Social Media Campaign</h5>
+              <p class="card-text flex-grow-1">Engaging graphics created for social media platforms to boost your online presence.</p>
+              <button class="btn btn-primary add-to-card-btn mt-auto" data-name="Social Media Campaign">
+                <i class="bi bi-plus-circle"></i> Add to Cards
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards Summary -->
+  <div class="mt-5">
+    <h4>Your Cards</h4>
+    <ul id="cards-list" class="list-group"></ul>
+  </div>
+</section>
+
+<script>
+  // Category filter buttons
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const categorySections = document.querySelectorAll('.category-section');
+  const cardsList = document.getElementById('cards-list');
+  let addedCards = [];
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const category = btn.getAttribute('data-category');
+      categorySections.forEach(section => {
+        section.style.display = (category === 'all' || section.getAttribute('data-category') === category) ? 'block' : 'none';
+      });
+    });
+  });
+
+  // Add to Cards functionality
+  document.querySelectorAll('.add-to-card-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const name = btn.getAttribute('data-name');
+      if (!addedCards.includes(name)) {
+        addedCards.push(name);
+        updateCardsList();
+      } else {
+        alert(`${name} is already added to your cards.`);
+      }
+    });
+  });
+
+  // Update cards list UI
+  function updateCardsList() {
+    cardsList.innerHTML = '';
+    addedCards.forEach(card => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between align-items-center';
+      li.textContent = card;
+      const removeBtn = document.createElement('button');
+      removeBtn.className = 'btn btn-sm btn-danger';
+      removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', () => {
+        addedCards = addedCards.filter(c => c !== card);
+        updateCardsList();
+      });
+      li.appendChild(removeBtn);
+      cardsList.appendChild(li);
+    });
+  }
+</script>
+
+ 
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <div class="testimonial mx-auto" style="max-width: 600px;">
+            <p class="fst-italic">"Khatoon Designer transformed my vision into reality. Exceptional craftsmanship and timely delivery!"</p>
+            <h6>- Ayesha K.</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial mx-auto" style="max-width: 600px;">
+            <p class="fst-italic">"Professional, creative, and attentive. Highly recommend for anyone looking for bespoke designs."</p>
+            <h6>- Sara M.</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial mx-auto" style="max-width: 600px;">
+            <p class="fst-italic">"Amazing service with attention to detail. I love my new interiors!"</p>
+            <h6>- Nadia S.</h6>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container my-5">
+  <h2 class="text-center mb-4">Get in Touch</h2>
+  <form id="contactForm" novalidate>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name *</label>
+        <input type="text" class="form-control" id="name" placeholder="Your name" required />
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" class="form-control" id="email" placeholder="Your email" required />
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message *</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+        <div class="invalid-feedback">Please enter your message.</div>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-primary btn-lg" type="submit">
+          <i class="bi bi-envelope-paper"></i> Send Message
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-md-start py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="mb-3 mb-md-0">
+      &copy; 2025 Khatoon Designer. All rights reserved.
+    </div>
+    <div>
+      <a href="#" class="text-reset me-3 fs-4"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-reset me-3 fs-4"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-reset me-3 fs-4"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-reset fs-4"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Contact form validation
+  (function () {
+    'use strict';
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        event.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        form.reset();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  })();
+</script>
+
+</body>
+</html>
